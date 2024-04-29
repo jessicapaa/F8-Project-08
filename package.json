@@ -1,0 +1,21 @@
+{
+  "name": "f8-project-08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass scss:assets/css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicapaa/F8-Project-08.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicapaa/F8-Project-08/issues"
+  },
+  "homepage": "https://github.com/jessicapaa/F8-Project-08#readme"
+}
