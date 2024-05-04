@@ -11,6 +11,7 @@
 
 .top-bar {
     @extend %flexItemsCenter;
+    position: relative;
     padding: 30px 0;
 
     @include abstracts.breakPoint(lg) {
@@ -44,23 +45,34 @@
 
     &__list {
         @extend %flexItemsCenter;
-        column-gap: 30px;
     }
 
     &__item {
-        @extend %flexItemsCenter;
-        column-gap: 6px;
+        &:first-child a {
+            padding-left: 0;
+        }
+
+        &:last-child a {
+            padding-right: 0;
+        }
+
+        &:hover .dropdown {
+            display: block;
+        }
     }
 
     &__link {
+        @extend %flexItemsCenter;
+        padding: 0 30px;
+        column-gap: 6px;
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.46; /* 146.667% */
+        height: 50px;
     }
 
     &__arrow {
         margin-top: 3px;
-        cursor: pointer;
     }
 }
 
