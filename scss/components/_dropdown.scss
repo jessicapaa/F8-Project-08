@@ -123,6 +123,12 @@
 
     overflow-y: auto;
 
-    &__column {
+    &--not-main {
+        height: calc(var(--inner-max-height) - 50px);
+        position: initial;
+        inset: initial;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 0;
     }
 }

@@ -1502,5 +1502,13 @@ html.dark {
   column-gap: 30px;
   overflow-y: auto;
 }
+.sub-menu--not-main {
+  height: calc(var(--inner-max-height) - 50px);
+  position: initial;
+  inset: initial;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 0;
+}
 
 /*# sourceMappingURL=main.css.map */
