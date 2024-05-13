@@ -34,6 +34,19 @@ html.dark {
     --cate-item-thumb-bg: #292e39;
     --cate-item-title-color: #fff;
 
-    @include abstracts.screen(md) {
-    }
+    // FILTER BUTTON
+    --filter-btn-color: #fff;
+    --filter-btn-bg: #171c28;
+
+    // PRODUCT CARD
+    --product-card-bg: #171c28;
+    --product-card-shadow: rgba(0, 0, 0, 0.2);
+
+    // FILTER FORM
+    --filter-form-bg: #2f3441;
+    --filter-form-shadow: rgba(0, 0, 0, 0.4);
+    --filter-form-tag-bg: #171c28;
+    --filter-arrow-color: brightness(0) saturate(100%) invert(13%) sepia(3%) saturate(6455%) hue-rotate(186deg)
+        brightness(92%) contrast(79%);
+    --filter-input-color: #fff;
 }
