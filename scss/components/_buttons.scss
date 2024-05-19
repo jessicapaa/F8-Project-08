@@ -38,6 +38,11 @@
 
 // BUTTON
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     height: 46px;
     padding: 0 20px;
     background: #f8f8fb;
@@ -49,7 +54,9 @@
     border-radius: 6px;
 
     + .btn {
-        margin-left: 20px;
+        &:not(.btn-no-margin) {
+            margin-left: 20px;
+        }
     }
 
     &--text {
