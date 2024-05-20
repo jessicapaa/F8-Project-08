@@ -58,5 +58,14 @@ html {
     @include abstracts.screen(md) {
         --auth-intro-bg: #fff;
     }
+
+    // FORM
     --form-placeholder-color: #d2d1d6;
+
+    // PRODUCT-DETAIL
+    --product-detail-bg: #fff;
+
+    // BREADCRUMB
+    --breadcrumb-bg-color: #f6f6f6;
+    --breadcrumb-shadow-bg: rgba(237, 237, 246, 0.2);
 }
