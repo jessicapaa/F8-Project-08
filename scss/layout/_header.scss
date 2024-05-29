@@ -226,6 +226,14 @@
         padding: 13px;
     }
 
+    &__btn-wrap {
+        position: relative;
+
+        &:hover .act-dropdown {
+            display: block;
+        }
+    }
+
     &__btn {
         @extend %flexItemsCenter;
         column-gap: 10px;
@@ -280,5 +288,130 @@
     }
     @include abstracts.screen(sm) {
         padding: 0 20px;
+    }
+}
+
+.act-dropdown {
+    position: absolute;
+    top: 48px;
+    right: -60px;
+    padding-top: 28px;
+    width: min(500px, 100vw);
+    display: none;
+
+    &__inner {
+        position: relative;
+        padding: 30px;
+        border-radius: 2rem;
+        background: var(--header-action-dropdown-bg);
+        box-shadow: 0px 40px 90px 20px var(--header-action-shadow-bg);
+    }
+
+    &__arrow {
+        position: absolute;
+        top: -17px;
+        right: 96px;
+        height: 80px;
+        height: 20.5px;
+        filter: var(--dropdown-arrow-color);
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+    }
+
+    &__view-all {
+        color: #0071dc;
+        font-feature-settings: "clig" off, "liga" off;
+        font-weight: 500;
+        /* Regular 22 */
+        font-size: 1.6rem;
+        line-height: 145.455%;
+    }
+
+    &__bottom {
+        padding: 20px 0;
+        margin: 20px 0;
+        border-width: 1px 0;
+        border-color: var(--header-action-dropdown-border-color);
+        border-style: solid;
+    }
+
+    &__separate {
+        margin: 30px 0;
+        height: 1px;
+        background: var(--header-action-dropdown-border-color);
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__row + &__row {
+        margin-top: 20px;
+    }
+
+    &__label,
+    &__value {
+        font-size: 1.8rem;
+        line-height: 145.455%; /* 145.455% */
+    }
+
+    &__row-bold {
+        font-weight: 500;
+    }
+
+    &__checkout {
+        display: flex;
+        justify-content: flex-end;
+
+        &-btn {
+            min-width: 250px;
+        }
+    }
+}
+
+.cart-preview__item {
+    &__img-wrap {
+        padding-top: 100%;
+        position: relative;
+        border: 1px solid var(--header-action-cart-preview-border-color);
+        border-radius: 10px;
+    }
+
+    &-thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &-title {
+        margin-top: 14px;
+        /* Regular 14 */
+        font-size: 1.5rem;
+        line-height: 142.857%; /* 142.857% */
+    }
+
+    &-price {
+        margin-top: 6px;
+
+        /* Medium 15 */
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%; /* 146.667% */
     }
 }
